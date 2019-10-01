@@ -1,0 +1,3 @@
+#!/bin/sh
+mkdir -p /var/backups/gp/webapp/var/www/html
+rsync -a --delete /var/www/html/ /var/backups/gp/webapp/var/www/html/
