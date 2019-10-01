@@ -14,13 +14,13 @@ The product is formed by one container:
 
 1. Use the `docker-compose.yml.sample` file as your docker-compose configuration file.
 
-2. Create a docker network called "platform_services" before start the services with `docker network create platform_services`.
+2. Create a docker network called "platform_products" before start the services with `docker network create platform_products`.
 
 3. Create a directory called `webapp` and place your web application files within.
 
 4. Start with `docker-compose up -d`.
 
-5. Open a browser in the url <http://localhost:8080> to view your application running.
+5. Open the url <http://localhost:8080> in a browser to view your application running.
 
 6. Manage backups of your files:
 
