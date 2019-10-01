@@ -3,12 +3,12 @@
 @Library('github.com/teecke/jenkins-pipeline-library@v3.4.1') _
 
 // Initialize global config
-cfg = jplConfig('gp-jenkins', 'docker', '', [email:'pedroamador.rodriguez+teecke@gmail.com'])
+cfg = jplConfig('gp-php', 'docker', '', [email:'pedroamador.rodriguez+teecke@gmail.com'])
 
 def publishDockerImage() {
     nextReleaseNumber = sh (script: "kd get-next-release-number .", returnStdout: true).trim().substring(1)
     docker.withRegistry("https://registry.hub.docker.com", 'teeckebot-docker-credentials') {
-        def customImage = docker.build("teecke/gp-jenkins:${nextReleaseNumber}", "./jenkins")
+        def customImage = docker.build("teecke/gp-php:${nextReleaseNumber}", "./webapp")
         customImage.push()
         customImage.push('latest')
     }
