@@ -1,3 +1,6 @@
 #!/bin/sh
-mkdir -p /var/backups/gp/webapp/var/www/html
-rsync -a --delete /var/www/html/ /var/backups/gp/webapp/var/www/html/
+
+set -eu
+
+mkdir -p /var/backups/gp/webapp
+rsync -a --relative --delete /var/www/html/ /var/backups/gp/webapp/

@@ -1,4 +1,4 @@
-FROM php:7.3.9-apache-buster
+FROM php:7.4.2-apache-buster
 
 # Install packages
 RUN apt-get update && \
@@ -10,3 +10,6 @@ RUN apt-get update && \
 # Copy backup/cleanup scripts
 COPY backup /usr/local/bin/backup
 COPY cleanup /usr/local/bin/cleanup
+
+# GP service identification
+RUN echo "webapp" > /gp.service

@@ -2,11 +2,11 @@ version: '3.7'
 
 services:
   webapp:
-    image: teecke/gp-php:0.1.0
+    image: teecke/gp-php:0.2.0
     ports:
       - 8080:80
     volumes:
-      - ./webapp:/var/www/html:ro
+      - ./data/var/www/html:/var/www/html:ro
     restart: unless-stopped
       
 networks:
