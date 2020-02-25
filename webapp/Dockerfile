@@ -1,4 +1,4 @@
-FROM php:7.4.2-apache-buster
+FROM php:7.4.3-apache-buster
 
 # Install packages
 RUN apt-get update && \
