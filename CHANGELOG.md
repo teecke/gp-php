@@ -1,5 +1,24 @@
 # Changelog
 
+## v0.3.0 (2020-02-25)
+
+### Upgrade
+
+* Use php:7.4.3-apache-buster as base image ([d39cab1](https://github.com/teecke/gp-php/commit/d39cab1))
+
+### Update
+
+* Use next image tag in docker-compose file ([5c9d9a5](https://github.com/teecke/gp-php/commit/5c9d9a5))
+
+### Build
+
+* Update Auto Release Log adding v0.3.0 info with JPL ([227dc36](https://github.com/teecke/gp-php/commit/227dc36))
+* Use a most generig gp pipeline ([c90591b](https://github.com/teecke/gp-php/commit/c90591b))
+
+### Docs
+
+* Generate v0.2.0 changelog with JPL ([dc21df6](https://github.com/teecke/gp-php/commit/dc21df6))
+
 ## v0.2.0 (2020-01-26)
 
 ### New
