@@ -1,3 +1,7 @@
+# DEPRECATED
+
+Please visit https://github.com/tpbtools/gp-php
+
 # Generic Platform - PHP Web Application
 
 ## Overview
